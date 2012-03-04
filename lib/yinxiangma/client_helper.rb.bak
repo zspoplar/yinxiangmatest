@@ -9,7 +9,7 @@ module Yinxiangma
       raise YinxiangmaError, "No publisher key specified." unless key
       error = options[:error] ||= (defined? flash ? flash[:yinxiangma_error] : "")
       token = request_token(key)
-      if(token[1] == 'key_invalid')
+      if(token[0] != 'false')
         html << <<-EOS
           <script type='text/javascript'>
             var YinXiangMaDataString ='#{token[0]}';
