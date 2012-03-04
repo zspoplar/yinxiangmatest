@@ -2,12 +2,13 @@
 module Yinxiangma
   module Valid
     def yinxiangma_valid
-      valid_uri = "http://www.yinxiangma.com/api/yzm.valid.php"
+      valid_uri = "https://api.hinside.cn/default.php"
       http = Net::HTTP
       answer, error = http.post_form(URI.parse(valid_uri), {
-        "s" => "cb9d0fe8dabdea89019d845be3059973",
-        "t" => params[:YinXiangMa_challenge],
-        "i" => params[:YinXiangMa_response]
+        "k" => "a9ebfa885ed74e9d5cc5e3e2bc681b68",
+        "ip" => params[:HCaptchaRemoteAddr],
+        "c" => params[:HCaptchaInput],
+        "sid" => params[:HCaptchaSid]
         }).body.split('+')
     
       if(answer == 'true')

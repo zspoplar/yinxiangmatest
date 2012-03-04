@@ -15,7 +15,7 @@ module Yinxiangma
             var YinXiangMaDataString ='#{token[0]}';
           </script>
           <script type='text/javascript' 
-            src='http://www.yinxiangma.com/widget/YinXiangMa.php' charset='utf-8'>
+            src='https://api.hinside.cn/default.php' charset='utf-8'>
           </script>
         EOS
       elsif(token[1] == 'null key')

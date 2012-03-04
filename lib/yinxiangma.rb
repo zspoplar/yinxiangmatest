@@ -6,12 +6,12 @@ require "yinxiangma/valid"
 module Yinxiangma
   
   
-  YINXIANGMA_API_SERVER_URL = 'http://www.yinxiangma.com/api/'
-  YINXIANGMA_REGISTER_URL   = 'http://www.yinxiangma.com/server/register.php'
+  YINXIANGMA_API_SERVER_URL = 'api.hinside.cn'
+  YINXIANGMA_REGISTER_URL   = 'https://api.hinside.cn/default.php'
   YINXIANGMA_TOKEN_URL      = 'yzm.token.php'
   YINXIANGMA_VALID_URL      = 'yzm.valid.php'  
   YINXIANGMA_DISPLAY_MODE   = 'live'
-  YINXIANGMA_PUBLISHER_KEY  = 'cb9d0fe8dabdea89019d845be3059973'
+  YINXIANGMA_PUBLISHER_KEY  = 'b6ccaa33ebb72559e03e2f6aeb3764bc'
   
   SKIP_VALID_ENV = 'test'
   
