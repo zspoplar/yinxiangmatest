@@ -11,7 +11,7 @@ module Yinxiangma
   YINXIANGMA_TOKEN_URL      = 'yzm.token.php'
   YINXIANGMA_VALID_URL      = 'yzm.valid.php'  
   YINXIANGMA_DISPLAY_MODE   = 'live'
-  YINXIANGMA_PUBLISHER_KEY  = 'b6ccaa33ebb72559e03e2f6aeb3764bc'
+  
   
   SKIP_VALID_ENV = 'test'
   

@@ -22,10 +22,6 @@ module Yinxiangma
         html << <<-EOS
           为了使用<strong>印象码</strong>视频验证码广告系统， 你必须注册并拥有一个 KEY. <br /><a href='#{reg_url}'>点击注册</a>
         EOS
-      elsif(token[1] == 'key_invalid')
-        html << <<-EOS
-          您的<strong>印象码</strong>插件配置有误，请检查您的配置文件！
-        EOS
       end
             
       return (html.respond_to?(:html_safe) && html.html_safe) || html
